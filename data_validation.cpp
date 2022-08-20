@@ -11,7 +11,7 @@ bool email_val(std::string str) {
         if (str[i] >= 'a' && str[i] <= 'z') { }
         else if (str[i] >= '0' && str[i] <= '9') { }
         else if (str[i] == '-' || str[i] == '_' || str[i] == '.') {
-            if ((str[i] == '-' && str[i+1] == '-') || (str[i] == '_' && str[i+1] == '_') || (str[i] == '.' && str[i+1] == '.' )) {
+            if ((str[i] == '-' && str[i+1] == '-') || (str[i] == '_' && str[i+1] == '_') || (str[i] == '.' && str[i+1] == '.')) {
                 return false;
             }
             ++i;
